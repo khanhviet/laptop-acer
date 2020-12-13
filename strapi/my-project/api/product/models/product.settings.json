@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desciption": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "qtv": {
+      "type": "integer"
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    }
+  }
+}
